@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RespuestaScanLotesActivity">
+
+    <include
+        android:id="@+id/toolBarTituloIndividual"
+        layout="@layout/toolbar_titulo"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <!--Parametros a ingresar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <!--Titutlo -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Listado"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:paddingRight="1dp"
+                    android:textColor="@color/blcak"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="Resultados"
+                    android:textStyle="normal"
+                    android:textSize="20dp"
+                    android:textColor="@color/boton_rojo_select"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+
+                >
+
+                <ListView
+                    android:id="@+id/lvLotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="528dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:id="@+id/linerBoton">
+
+            <Button
+                android:id="@+id/btn_guardar_lotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Guardar"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

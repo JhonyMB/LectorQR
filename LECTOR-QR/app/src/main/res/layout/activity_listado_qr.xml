@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ListadoQrActivity">
+
+    <include
+        android:id="@+id/toolBarTitulo"
+        layout="@layout/toolbar_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="0dp"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="376dp"
+        android:layout_height="615dp"
+        android:padding="20dp"
+        android:paddingTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarTitulo"
+        app:layout_constraintVertical_bias="0.266"
+        tools:listitem="@layout/item_recycler" />
+
+    <ImageView
+        android:id="@+id/empty_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.1"
+        android:src="@drawable/ic_empty"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarTitulo"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:alpha="0.4"
+        android:text="No se realizarón registros."
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_imageview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

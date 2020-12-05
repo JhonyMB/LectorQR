@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#e1710d</color>
+    <color name="colorAccent">#e7840c</color>
+    <color name="colorPrimary">#F07613</color>
+
+    <color name="boton_rojo_unselect">#FF5722</color>
+    <color name="boton_rojo_select">#F07613</color>
+    <color name="titulo_cabecera">#009919</color>
+
+    <color name="white">#ffffff</color>
+    <color name="blcak">#000000</color>
+    <color name="gris_fondo">#f0f0f0</color>
+    <color name="celeste_boton">#008be8</color><!--para botones y configuracion -->
+
+    <color name="gris_etiqueta_negra">#626262</color>
+    <color name="gris_etiqueta">#adadad</color>
+
+    <color name="lightgray">#ededed</color>
+</resources>

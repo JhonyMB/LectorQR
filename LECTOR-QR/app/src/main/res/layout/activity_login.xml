@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="70dp">
+
+        <!--Parametros a ingresar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical">
+
+            <!--Titutlo -->
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inicia"
+                    android:textStyle="normal"
+                    android:textSize="40dp"
+                    android:paddingRight="1dp"
+                    android:textColor="@color/blcak"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="sesión"
+                    android:textStyle="normal"
+                    android:textSize="40dp"
+                    android:textColor="@color/boton_rojo_select"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <!--  <Spinner
+                      android:id="@+id/spListaTaller"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"></Spinner>
+
+                  <android.support.v7.widget.AppCompatSpinner
+                      android:id="@+id/spListaTaller"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="2"
+                      android:backgroundTint="@android:color/black"
+                      android:textColor="@android:color/black" />-->
+            </LinearLayout>
+
+            <!-- Correo -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su usuario"
+                android:textColorHint="@color/boton_rojo_unselect"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/celeste_boton"
+                    android:id="@+id/txt_usuario"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Contrasenia-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese su contraseña"
+                android:textColorHint="@color/boton_rojo_unselect"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/celeste_boton"
+                    android:inputType="textPassword"
+                    android:id="@+id/txt_password"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Olvide contrasenia -->
+            <TextView
+                android:id="@+id/txt_recuperar_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingTop="18dp"
+                android:textColor="@color/blcak"
+                android:text="¿Olvidaste tu contraseña?" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <Button
+                android:id="@+id/btn_ingreso_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_selector"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Ingresar"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/boton_rojo_select"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:src="@drawable/ic_back"
+            android:textStyle="bold"
+            android:id="@+id/imgBakTooBar"
+            android:paddingRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ingenieria Informática"
+            android:id="@+id/tvtituloToolBar"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Layout for content is here. This can be a RelativeLayout  -->
+
+</LinearLayout>
